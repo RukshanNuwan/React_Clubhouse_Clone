@@ -7,3 +7,42 @@
   padding: 3em 1.5em;
   background-color: #f2f0e4;
 }
+
+.WelcomeContainer h1 {
+  margin-bottom: 0;
+  color: var(--textColor);
+  font-size: 1.7em;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.WelcomeInfo {
+  height: 253px;
+  overflow: auto;
+}
+
+.WelcomeInfo p {
+  margin-bottom: 2em;
+  color: var(--textColor);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.ActionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.ActionButton > a {
+  text-decoration: none;
+}
+
+.ActionButton > a:last-child {
+  color: var(--btnBgColor);
+  font-size: 0.875em;
+  font-weight: 400;
+  font-style: normal;
+}
