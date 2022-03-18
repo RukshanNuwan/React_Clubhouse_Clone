@@ -1,0 +1,9 @@
+.WelcomeContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em 1.5em;
+  background-color: #f2f0e4;
+}
