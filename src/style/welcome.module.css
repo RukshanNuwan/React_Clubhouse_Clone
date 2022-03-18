@@ -36,10 +36,6 @@
   align-self: center;
 }
 
-.ActionButton > a {
-  text-decoration: none;
-}
-
 .ActionButton > a:last-child {
   color: var(--btnBgColor);
   font-size: 0.875em;
