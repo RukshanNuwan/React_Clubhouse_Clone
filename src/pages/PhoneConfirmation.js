@@ -34,7 +34,7 @@ const PhoneConfirmation = () => {
       <Link
         exact="true"
         to="/code_confirm"
-        className="primaryButton d-flex align-items-center"
+        className="primaryButton d-flex align-items-center mt-4"
       >
         Next <img src="images/nextArrowIcon.svg" alt="" className="mx-1"/>
       </Link>

@@ -32,3 +32,12 @@ a {
   font-weight: 500;
   font-style: normal;
 }
+
+.app_layout {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+  background-color: #f2f0e4;
+}
