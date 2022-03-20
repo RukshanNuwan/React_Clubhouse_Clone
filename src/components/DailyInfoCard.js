@@ -3,9 +3,20 @@ import data from '../data/dailyCard.json';
 
 const DailyInfoCard = () => {
   return (
-    <>
-      <h2>daily card</h2>
-    </>
+    <div className={style.daily_card}>
+      {data.map((item, index) => (
+        <div key={index}>
+          <span>{item.time}</span>
+
+          <div>
+            <span>{item.title}</span>
+            <p>
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
