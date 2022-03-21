@@ -28,7 +28,7 @@ const RoomInfoCard = () => {
                   <p className="d-flex align-items-center">
                     <span className="me-md-2">1.8</span>
                     <BsFillPersonFill/>
-                    <span className="mx-2"></span>{" "}
+                    <span className="mx-2"/>{" "}
                     <span className="me-2">5</span> <BsChatDotsFill/>
                   </p>
                 </div>

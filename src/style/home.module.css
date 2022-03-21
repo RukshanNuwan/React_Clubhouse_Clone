@@ -3,3 +3,47 @@
   padding: 3.5em 1em;
   overflow: auto;
 }
+
+.home_container + .action_button {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 4em 1.5em 2em;
+  background-image: linear-gradient(transparent 20%, #f2f0e4 80%);
+}
+
+.home_container + .action_button button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.home_container + .action_button > button:first-child {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0.3em 1em;
+  font-size: 1.1em;
+  font-weight: 400;
+  border-radius: 2em;
+  background-color: #28ae61;
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+.home_container + .action_button > button:nth-child(2) {
+  line-height: 1;
+}
+
+.home_container + .action_button > button:nth-child(2) svg {
+  color: var(--textColor);
+}
+
+.home_container + .action_button button svg {
+  font-size: 1.3em;
+}

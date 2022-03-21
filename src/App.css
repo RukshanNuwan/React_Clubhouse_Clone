@@ -40,4 +40,5 @@ a {
   height: 100vh;
   margin: auto;
   background-color: #f2f0e4;
+  overflow: hidden;
 }
