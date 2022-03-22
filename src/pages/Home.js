@@ -1,12 +1,13 @@
 import {useState} from "react";
-import Header from "../components/Header";
-import DailyInfoCard from "../components/DailyInfoCard";
-import style from '../style/home.module.css';
-import RoomInfoCard from "../components/RoomInfoCard";
 import {AiOutlinePlus} from 'react-icons/ai';
 import {BsGrid3X3GapFill} from 'react-icons/bs';
-import data from '../data/roomCard.json';
+import Header from "../components/Header";
+import DailyInfoCard from "../components/DailyInfoCard";
+import RoomInfoCard from "../components/RoomInfoCard";
 import BottomSheet from "../components/BottomSheet";
+import newRoomData from '../data/newRoom.json';
+import data from '../data/roomCard.json';
+import style from '../style/home.module.css';
 
 const Home = () => {
   const [itemsVisible, setItemsVisible] = useState(true);
@@ -17,6 +18,25 @@ const Home = () => {
 
   return (
     <>
+      {loaderVisibility ? (
+        <div
+          style={{
+            position: 'fixed',
+            top: '0',
+            right: '0',
+            bottom: '0',
+            left: '0',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          <img src="/images/loader.gif" alt="loader"/>
+        </div>
+      ) : (
+        ''
+      )}
+
       <Header/>
 
       <div className={style.home_container}>
@@ -46,8 +66,16 @@ const Home = () => {
           setTimeout(() => {
             setSheetCreateRoom(item);
             setLoaderVisibility(false);
-          }, 1000);
+          }, 1500);
         }}
+      />
+
+      <BottomSheet
+        sheetTitle="new room"
+        setSheetVisible={(item) => setSheetCreateRoom(item)}
+        sheetVisible={sheetCreateRoom}
+        cardDetail={newRoomData}
+        setItemsVisible={(item) => setItemsVisible(item)}
       />
     </>
   );

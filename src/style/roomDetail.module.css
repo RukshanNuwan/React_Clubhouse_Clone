@@ -1,0 +1,33 @@
+.room_detail_container {
+  height: 100%;
+  margin: -1.5em -1em;
+  background-color: #f2f0e4;
+}
+
+.room_detail_container .head {
+  padding: 0.8em 0.5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head .arrow_icon {
+  width: 15px;
+  margin-top: -0.5em;
+  transform: rotate(-90deg);
+}
+
+.head .profile_image {
+  width: 25px;
+  margin-left: 1.2em;
+  border-radius: 0.8em;
+}
+
+.head span {
+  margin-left: 0.5em;
+  font-size: 1em;
+}
+
+.head svg {
+  font-size: 1.4em;
+}
