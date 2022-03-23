@@ -1,0 +1,31 @@
+.profile_container {
+  height: 100%;
+  padding: 5em 0.5em 0;
+  overflow: auto;
+}
+
+.profile_container .profile_image {
+  width: 80px;
+  border-radius: 2.2em;
+}
+
+.profile_container h4 {
+  margin: 0.5em 0 0.1em;
+  font-size: 1.5em;
+  color: var(--textColor);
+}
+
+.profile_container p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #aaa;
+}
+
+.action_button svg {
+  margin-right: 1em;
+  font-size: 1.7em;
+}
+
+.action_button > svg:last-child {
+  margin-right: 0;
+}

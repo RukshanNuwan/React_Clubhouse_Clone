@@ -31,3 +31,126 @@
 .head svg {
   font-size: 1.4em;
 }
+
+.room_detail_card {
+  height: 90vh;
+  padding: 1em 1em 3em;
+  background-color: #fff;
+  border-radius: 1.5em 1.5em 0 0;
+  overflow: auto;
+}
+
+.room_detail_card h6 {
+  margin-bottom: 0.3em;
+  font-size: 0.675em;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+.room_detail_card img {
+  width: 70px;
+  border-radius: 1.7em;
+}
+
+.member_container {
+  position: relative;
+  width: 70px;
+  text-align: center;
+}
+
+.member_container .audio_icon {
+  position: absolute;
+  right: -5px;
+  bottom: 36px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.member_container .audio_icon svg {
+  color: #28ae61;
+}
+
+.member_container p {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000;
+}
+
+.member_container span {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-size: 2.5em;
+  border-radius: 50%;
+  background-color: #28ae61;
+  color: #fff;
+  line-height: 0.7;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.8em 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.footer button {
+  background-color: #e7e4d5;
+  border: none;
+  border-radius: 2em;
+}
+
+.footer button img {
+  width: 30px;
+}
+
+.footer > button {
+  padding: 0.3em 1em;
+  display: flex;
+  align-items: center;
+  color: #28ae61;
+  font-weight: 500;
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+}
+
+.footer > div > button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.footer > div > button:first-child {
+  margin-right: 0.5em;
+  font-size: 1.3em;
+}
+
+.footer > div > button:nth-child(2) {
+  margin-right: 0.5em;
+}
+
+.footer > div > button:nth-child(3) {
+  font-size: 1.3em;
+}

@@ -66,7 +66,7 @@ const Home = () => {
           setTimeout(() => {
             setSheetCreateRoom(item);
             setLoaderVisibility(false);
-          }, 1500);
+          }, 1000);
         }}
       />
 
