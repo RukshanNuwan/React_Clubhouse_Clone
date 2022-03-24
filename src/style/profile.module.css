@@ -21,6 +21,30 @@
   color: #aaa;
 }
 
+.profile_container .follow {
+  margin-bottom: 2.5em;
+  display: flex;
+  align-items: baseline;
+}
+
+.profile_container .follow > p {
+  margin-right: 2.5em;
+}
+
+.profile_container .follow p span {
+  margin-right: 0.2em;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.profile_container button {
+  margin-bottom: 2.5em;
+  border: none;
+  background-color: transparent;
+  color: var(--btnBgColor);
+}
+
 .action_button svg {
   margin-right: 1em;
   font-size: 1.7em;
@@ -28,4 +52,34 @@
 
 .action_button > svg:last-child {
   margin-right: 0;
+}
+
+.nominated {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.nominated img {
+  width: 40px;
+  margin-right: 0.5em;
+  border-radius: 1em;
+}
+
+.nominated p {
+  font-size: 0.975em;
+  line-height: 1.4;
+}
+
+.nominated p span {
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.add_member_button {
+  margin-top: 0.3em;
+  margin-bottom: 0 !important;
+  padding: 0.8em 1em;
+  background-color: #ADD8E6 !important;
+  border-radius: 1em;
 }

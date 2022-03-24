@@ -1,6 +1,6 @@
 const AppLayout = ({children}) => {
   return (
-    <div className="app_layout">
+    <div className={children ? 'app_layout' : null}>
       {children}
     </div>
   );

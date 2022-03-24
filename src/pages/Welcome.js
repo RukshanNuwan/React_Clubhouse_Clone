@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
 const Welcome = () => {
   return (
     <div className={style.WelcomeContainer}>
-      <h2>welcome</h2>
+      <h2>Welcome!</h2>
+
       <div className={style.WelcomeInfo}>
         <p>
           we're working hard to get clubhouse ready for everyone! While we wrap
@@ -25,12 +26,11 @@ const Welcome = () => {
       </div>
 
       <div className={style.ActionButton}>
-        <Link exact to="/get_username" className="primaryBtn d-flex align-items-center mb-3">
+        <Link exact to="/invite" className="primaryBtn d-flex align-items-center mb-3">
           Get your username {" "}
-          {/*<img src="" alt=""/>*/}
         </Link>
 
-        <Link exact to=''>
+        <Link exact to="">
           Have an invite text? Sign in
         </Link>
       </div>

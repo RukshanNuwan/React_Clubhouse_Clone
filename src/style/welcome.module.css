@@ -36,6 +36,14 @@
   align-self: center;
 }
 
+.ActionButton > a:first-child {
+  padding: 1em 2em;
+  background-color: var(--btnBgColor);
+  color: #fff;
+  font-weight: 400;
+  border-radius: 2em;
+}
+
 .ActionButton > a:last-child {
   color: var(--btnBgColor);
   font-size: 0.875em;
